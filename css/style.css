@@ -1,0 +1,27 @@
+/* Cabeçalho */
+.navbar-default{
+    background-color: #773a3a;
+    border: none;
+}
+.navbar{
+    border-radius: 0%;
+}
+.navbar-default .navbar-header a, .navbar-default .navbar-collapse ul li a{
+    color: #fff;
+}
+
+.navbar-default .navbar-header a:hover, .navbar-default .navbar-collapse ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle{
+    border-radius: 0%;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+

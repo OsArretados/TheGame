@@ -9,7 +9,6 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/colors.css">
     <link href="css/style.css" rel="stylesheet">
 
 
@@ -21,6 +20,18 @@
     <![endif]-->
   </head>
   <body>
+
+    <!-- SDK do Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="container-fluid">
             <div class="row">
                     <nav class="navbar navbar-default">
@@ -46,10 +57,77 @@
                             </div><!-- /.container-fluid -->
                           </nav>
             </div><!-- row -->
-        
-    
-    
-    
+
+            <!-- Botão de Voltar ao Topo -->
+            <div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+            <!-- Gif de Carregamento -->
+            <div id="loading"></div>
+
+          <!-- Banner -->
+          <div class="row">
+            <div class="carousel-iner" data-ride="carousel" id="slide-banner">
+              <div class="item active">
+                <img src="img/aco-hero_art-v2-1600x1000_289704.jpg" class="img-responsive wp-post-image" alt="Banner da Home">
+              </div>
+            </div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="row conteudo">
+            <div class="sobre-nos">
+              <h2>Quem Somos?</h2>
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+            </div>         
+            <div class="info">
+              <div class="col-md-6">
+                <div class="bloco">
+                  <h3>Os Jogos <i class="fa fa-television" aria-hidden="true"></i></h3>
+                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bloco">
+                  <h3>A industria dos Games <i class="fa fa-industry" aria-hidden="true"></i></h3>
+                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bloco">
+                  <h3>Maiores Empresas <i class="fa fa-cogs" aria-hidden="true"></i></h3>
+                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bloco">
+                  <h3>Programação nos Games <i class="fa fa-code" aria-hidden="true"></i></h3>
+                  <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+      <!--Footer -->
+      <div class="row rodape">
+        <footer>
+          <div class="info-rodape">
+            <div class="col-md-4">
+              <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Jogo 1</li></a>
+                <a href="#"><li>Jogo 2</li></a>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="feito">
+                <p>Site feito pelo grupo <a href="https://github.com/OsArretados" target="_blank"> Os Arretados</a>, disponibilizado no GitHub para estudos. 2017</p>
+              </div>
+            </div>
+            <div class="col-md-4">    
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+            </div>
+          </div>
+        </footer>
+      </div>
     
     
     </div> <!-- Container-fluid -->
